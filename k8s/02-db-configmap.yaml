@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: db-config
+  namespace: budget-app
+data:
+  POSTGRES_USER: "tejal"
+  POSTGRES_DB: "app_db"
+  POSTGRES_HOST: "db-service"
+  POSTGRES_PORT: "5432"
+  PROJECT_NAME: "Budget Tracker"
