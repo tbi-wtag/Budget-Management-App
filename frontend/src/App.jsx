@@ -122,15 +122,15 @@ function App() {
       <div style={styles.summaryGrid}>
         <div style={styles.summaryCard}>
           <span style={styles.summaryLabel}>INCOME</span>
-          <span style={{ ...styles.summaryVal, color: '#22c55e' }}>+${summary.total_income || 0}</span>
+          <span style={{ ...styles.summaryVal, color: '#22c55e' }}>+Rs{summary.total_income || 0}</span>
         </div>
         <div style={styles.summaryCard}>
           <span style={styles.summaryLabel}>EXPENSES</span>
-          <span style={{ ...styles.summaryVal, color: '#ef4444' }}>-${summary.total_expenses || 0}</span>
+          <span style={{ ...styles.summaryVal, color: '#ef4444' }}>-Rs{summary.total_expenses || 0}</span>
         </div>
         <div style={styles.summaryCard}>
           <span style={styles.summaryLabel}>BALANCE</span>
-          <span style={{ ...styles.summaryVal, color: '#3b82f6' }}>${summary.balance || 0}</span>
+          <span style={{ ...styles.summaryVal, color: '#3b82f6' }}>Rs{summary.balance || 0}</span>
         </div>
       </div>
 
