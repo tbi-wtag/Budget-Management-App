@@ -4,7 +4,7 @@ from app.core.config import settings
 
 engine = create_async_engine(
     settings.database.async_url,
-    poop_pre_ping = True,
+    pool_pre_ping = True,
     pool_size=35,
     max_overflow=30,
     pool_timeout=30,
